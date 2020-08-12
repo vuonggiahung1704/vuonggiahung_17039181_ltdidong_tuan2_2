@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#5FF8A4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập hệ thống"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản:"/>
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Không được để trống"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu"/>
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:layout_below="@+id/edtTaiKhoan"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Không được để trống"/>
+
+    <CheckBox
+        android:id="@+id/checkboxLuu"
+        android:layout_below="@+id/edtMatKhau"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu thông tin">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_below="@+id/checkboxLuu"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_below="@+id/btnDangNhap"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoát">
+
+    </Button>
+
+</RelativeLayout>

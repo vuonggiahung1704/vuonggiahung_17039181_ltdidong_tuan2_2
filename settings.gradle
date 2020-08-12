@@ -1,0 +1,5 @@
+include ':bai5'
+include ':bai3'
+include ':bai2'
+include ':app'
+rootProject.name = "VUONGGIAHUNG_17039181_TUAN02"

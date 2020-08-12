@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#5FF8A4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhân viên"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ID:"/>
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Không được để trống"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Tên NV:"/>
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtID"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Không được để trống"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/edtTen"
+        android:layout_marginLeft="110dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Full time"/>
+
+        <RadioButton
+            android:id="@+id/radPart"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Part time"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập nhân viên">
+    </Button>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnDangNhap"
+        android:background="#5FF8A4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView4"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</RelativeLayout>
